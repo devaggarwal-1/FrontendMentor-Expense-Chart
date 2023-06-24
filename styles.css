@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(27, 66%, 92%);
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+/* Container Styling */
+
+.container {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Balance Box Styling */
+
+.balance {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.balance p {
+    margin-bottom: 6px;
+    font-weight: 400;
+}
+
+
+/* Spening Box Styling */
+
+.spending {
+    width: 100%;
+    background-color: hsl(33, 100%, 98%);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.spending h3 {
+    margin-bottom: 0px;
+    color: hsl(25, 47%, 15%);
+    font-size: 4vh;
+}
+
+/* Chart Styling */
+.chart {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.chart div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    /* padding: 0 4px; */
+    color: hsl(28, 10%, 53%);
+    height: 250px;
+    width: 15%;
+    overflow: visible;
+
+
+
+}
+
+
+.bar {
+    width: 100%;
+    display: block;
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: visible;
+
+
+}
+
+.amount {
+    color: white;
+    background-color: hsl(25, 47%, 15%);
+    width: 110%;
+    padding: 4px;
+    border-radius: 7px;
+    margin-bottom: 5px;
+    overflow: visible;
+    text-align: center;
+    display: none;
+
+
+
+}
+
+.amount.show-amount {
+    display: block;
+
+}
+
+.bar.current {
+    background-color: hsl(186, 34%, 60%);
+}
+
+.bar.active {
+    opacity: 0.75;
+}
+
+
+.spending hr {
+    margin: 15px 0;
+}
+
+
+.spending-bymonth {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total-spending p {
+    color: hsl(28, 10%, 53%);
+}
+
+
+.last-month {
+    align-self: flex-end;
+
+}
+
+.last-month p:nth-child(1) {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 700;
+}
+
+.last-month p:nth-child(2) {
+    color: hsl(28, 10%, 53%);
+}
+
+/* Footer */
+
+.attribution {}
+
+/* 
+Media Screens */
+
+@media screen and (max-width: 700px) {
+    .container {
+        width: 90%;
+    }
+
+    .amount {
+        padding: 2px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1150px) and (Min-width: 701px) {
+    .container {
+        width: 50%;
+        padding: 2px;
+
+    }
+
+    .amount {
+        padding: 2px;
+        font-size: 15px;
+    }
+}
